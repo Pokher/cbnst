@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+double f(double x)
+{
+    return x*x*x-x-1;
+}
+
+double der(double x)
+{
+    return 3*x*x-1;
+}
+
+void newtonRaphson(double a, double b)
+{
+    double c;
+    double x=(a+b)/2;
+    while(1)
+    {
+        c=x;
+        printf("%lf  ", x);
+        double y=f(x);
+        double z=der(x);
+        x=x-(y/z);
+        if(fabs(x-c)<=0.0009)
+        {
+            break;
+        }
+    }
+}
+
+int main()
+{
+    double a=1.000, b=2.000;
+    newtonRaphson(a,b);
+}
+
+
+
