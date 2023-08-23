@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <math.h>
+
+double df(double x)
+{
+    return sqrt(1.0000/(x+1.0000));
+}
+
+double eq(double x, double y)
+{
+    return (x+y)/2.0000;
+}
+
+double chx(double x)
+{
+    return 1.0000/(sqrt(1.0000+x));
+}
+
+void inter(double a, double b)
+{
+    double ep=0.0009;
+    int c=0;
+    double x=5.0000;
+    double y=0.000;
+    while(x>ep)
+    {
+        if(x-y<ep)
+        {
+            break;
+        }
+        printf("%lf", df(x));
+        if(c==0)
+        {
+            c++;
+            a=(a+b)/2.0000;
+            x=chx(a);
+        }
+        else
+        {
+            y=x;
+            x=chx(x);
+        }
+    }
+}
+
+int main()
+{
+    double a=0.0000;
+    double b=1.0000;
+    inter(a, b);
+
+    return 0;
+}
