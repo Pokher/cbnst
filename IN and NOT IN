@@ -1,0 +1,30 @@
+Create table Employee
+(EmpNo varchar(5),EmpName varchar(20),Designation varchar(20),ManagerNo varchar(5), DOJ date, Salary int, Commission int,DeptNo varchar(4));
+Insert into Employee
+('8844','Mathew','Clerk','8600','17-Dec-90',8000,0,'200');
+Insert into Employee
+('8121','Mark','Salesman','8252','20-Feb-91',16000,2000,'300');
+Insert into Employee
+('8444','John','Salesman','8252','22-Feb-91',12500,5000,'300');
+Insert into Employee
+('8000','Sai','Manager','8080','2-Apr-91',29750,0,'200');
+Insert into Employee
+('8332','Joe','Salesman','8252','28-Sep-91',12500,4000,'300');
+Insert into Employee
+('8252','Brad','Manager','8080','1-May--91',28500,0,'300');
+Insert into Employee
+('8008','Mary','Manager','8080','9-June-91',24500,0,'100');
+Insert into Employee
+('8484','Scott','Analyst','8000','9-Dec-92',30000,0,'200');
+Insert into Employee
+('8080','Sunil','CEO',NULL,'17-Nov-91',50000,0,'100');
+Insert into Employee
+('8384','Issac','Salesman','8252','8-Sep-91',15000,0,'300');
+Insert into Employee
+('8585','Maria','Clerk','8484','12-Jan-93',11000,0,'200');
+Insert into Employee
+('8700','James','Clerk','8252','3-Dec-91',9500,0,'300');
+Insert into Employee
+('8600','Linda','Analyst','8000','4-Dec-91',30000,0,'200');
+Insert into Employee
+('8091','Miller','Clerk','8008','23-Jan-92',13000,0,'100');
